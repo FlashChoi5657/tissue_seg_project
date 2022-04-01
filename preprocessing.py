@@ -1,3 +1,7 @@
-import os, time, mh_loader
-import numpy as np
-import SimpleITK as sitk
+import os, sys
+sys.path.append('/home/check5657/Workspace/pycharm_pytorch')
+
+import mh_overlay, mh_loader
+from network.resunet_3d import *
+
+
