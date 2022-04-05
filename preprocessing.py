@@ -4,10 +4,8 @@ import mh_overlay, mh_loader
 from network.resunet_3d import *
 import segmentation_models_pytorch as smp
 
-import pytorch3dunet.unet3d.model
+import pytorch3dunet.unet3d.model as p
 
-
-
-
-a=smp.UnetPlusPlus()
+a=p.ResidualUNet3D()
+b=smp.UnetPlusPlus()
 
